@@ -1,4 +1,4 @@
-🚀 Overview:
+# 🚀 Overview:
 
 This project leverages the CrewAI framework to orchestrate specialized AI agents that execute a sequential financial analysis workflow. The backend is powered by FastAPI, with a user-friendly Streamlit frontend. To ensure production readiness, the system integrates with Azure Cloud for data persistence and artifact storage, and utilizes LangSmith for deep execution tracing.  
 
