@@ -6,11 +6,13 @@ This project leverages the CrewAI framework to orchestrate specialized AI agents
 The system utilizes a separation-of-concerns architecture, assigning distinct roles and tools to specialized agents:
 
 ### 1. The Quantitative Analyst
-A math-driven agent that evaluates companies strictly on hard data, balance sheets, earnings growth, and volatility. It ignores market hype and focuses purely on rigorous valuation metrics.  Tools: yfinance integration.  Capabilities: Fetches fundamental metrics (P/E, EPS, Beta, Market Cap) and calculates relative historical performance against the S&P 500 (SPY).  
+A math-driven agent that evaluates companies strictly on hard data, balance sheets, earnings growth, and volatility. It ignores market hype and focuses purely on rigorous valuation metrics.  
+Tools: yfinance integration.  
+Capabilities: Fetches fundamental metrics (P/E, EPS, Beta, Market Cap) and calculates relative historical performance against the S&P 500 (SPY).  
 
 ### 2. The Chief Investment StrategistA qualitative agent that synthesizes the quantitative numbers with broader market sentiment.  
 Tools: Firecrawl semantic web scraping.  
-Capabilities: Scrapes the full markdown content of recent news and analyst ratings to understand the market "narrative". It synthesizes this narrative with the Quant's hard numbers to formulate a final, reasoned 'Buy', 'Sell', or 'Hold' recommendation.  
+Capabilities: Scrapes the full markdown content of recent news and analyst ratings to understand the market narrative. It synthesizes this narrative with the Quant's hard numbers to formulate a final, reasoned 'Buy', 'Sell', or 'Hold' recommendation.  
 
 ## 🛠️ Tech Stack AI Orchestration: 
 CrewAI, LangChain, LangSmithBackend: FastAPI, Python (managed via uv)Frontend: StreamlitData Sources: Yahoo Finance API (yfinance), Firecrawl APICloud Infrastructure: Azure Blob Storage (Document Artifacts), Azure PostgreSQL (Structured Metadata)
