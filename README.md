@@ -26,24 +26,24 @@ To run this system locally, you will need to set up the environment and run both
 Create a .env file in the root directory and add the following required API keys and connection strings:
 
 ### AI Models
-OPENAI_API_KEY=your_openai_api_key
+`OPENAI_API_KEY=your_openai_api_key`
 
 ### Tools
-FIRECRAWL_API_KEY=your_firecrawl_api_key
+`FIRECRAWL_API_KEY=your_firecrawl_api_key`
 
 ### Cloud Storage & Database
-AZURE_BLOB_CONNECTION_STRING=your_azure_blob_string
-AZURE_POSTGRES_URL=your_postgres_connection_url
+`AZURE_BLOB_CONNECTION_STRING=your_azure_blob_string`
+`AZURE_POSTGRES_URL=your_postgres_connection_url`
 
 ### Tracing (Optional but recommended)
-LANGSMITH_TRACING=true
-LANGSMITH_ENDPOINT=https://api.smith.langchain.com
-LANGSMITH_API_KEY=your_langsmith_key
-LANGSMITH_PROJECT=Multi-Agents
+`LANGSMITH_TRACING=true`
+`LANGSMITH_ENDPOINT=https://api.smith.langchain.com`
+`LANGSMITH_API_KEY=your_langsmith_key`
+`LANGSMITH_PROJECT=Multi-Agents`
 
 ### 3. Run the Application
 It is recommended to use uv for fast dependency management and execution. You will need two terminal windows.
 
-uv run uvicorn src.api.main:app --reload
+`uv run uvicorn src.api.main:app --reload`
 
-uv run streamlit run frontend/app.py
+`uv run streamlit run frontend/app.py`
